@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../img/GNS-logo.png';
 
+
 function Header() {
     return (
         <div className="navbar">
@@ -9,12 +10,12 @@ function Header() {
             </div>
             <div className="nav-links">
                 <ul>
-                    <li>World</li>
+                    <li>General</li>
                     <li>Business</li>
-                    <li>Politics</li>
+                    <li>Science</li>
                     <li>Health</li>
                     <li>Sports</li>
-                    <li>Travel</li>
+                    <li>Technology</li>
                 </ul>
             </div>
         </div>

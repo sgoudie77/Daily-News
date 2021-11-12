@@ -5,7 +5,6 @@ function Sidebar() {
      
     return (
         <div className="sidebar">
-            <h2>Top Stories</h2>
             <SidebarPost />  
             <SidebarPost />  
             <SidebarPost />  

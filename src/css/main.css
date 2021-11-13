@@ -182,6 +182,12 @@ body {
     color: red;
     text-decoration: underline;
 }
+
+
+.category-page h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
 /* Categories Styles End Here */
 
 /* Article Page Styles Start Here */

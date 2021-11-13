@@ -7,7 +7,7 @@ function Footer() {
                 <ul>
                     <li>About</li>
                     <li>Contact</li>
-                    <li>&#169; Get-Coding 2021</li>
+                    <li>&#169;Get-Coding 2021</li>
                 </ul>
             </div>
         </div>

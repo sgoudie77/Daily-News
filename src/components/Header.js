@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '../img/GNS-logo.png';
 
-
 function Header() {
     return (
         <div className="navbar">

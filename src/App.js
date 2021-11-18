@@ -10,10 +10,13 @@ import './css/main.css';
 
 function App() {
   
+  const [contentDisplay, setContentDisplay] = useState(null);
+
   useEffect(() => {
     fetch('https://newsapi.org/v2/everything?q=keyword&apiKey=762ee7ce30574708912795f369bd7947')
       .then((response) => response.json())
-  })
+      .then(data => setContentDisplay(data.id))
+  },[])
 
   return (
     <div className="App">

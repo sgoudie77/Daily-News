@@ -9,7 +9,7 @@ function Article() {
         <div>
             <div className="article">
                 <div className="article-image">
-                    <img src={headlineImg} />
+                    <img src={headlineImg} alt="Headline News" />
                 </div>
                 <div className="article-title">
                     <h2>Article Title</h2>

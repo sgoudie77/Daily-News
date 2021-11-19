@@ -13,9 +13,14 @@ function App() {
   const [contentDisplay, setContentDisplay] = useState(null);
 
   useEffect(() => {
-    fetch('https://newsapi.org/v2/everything?q=keyword&apiKey=762ee7ce30574708912795f369bd7947')
-      .then((response) => response.json())
-      .then(data => setContentDisplay(data.id))
+    fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=762ee7ce30574708912795f369bd7947')
+      .then((response) => {
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+        setContentDisplay(data);
+      })
   },[])
 
   return (
@@ -23,10 +28,10 @@ function App() {
       <Header />
       <Router>
           <Routes>
-              <Route path="/" exact element={<Main />} />
-              <Route path="/article" exact element={<Article />} />
-              <Route path="/category" exact element={<CategoryPage />} />
-              <Route path="*" exact element={<PageNotFound />} />
+              <Route path="/" exact element={<Main contentDisplay={contentDisplay} />} />
+              <Route path="/article" exact element={<Article contentDisplay={contentDisplay} />} />
+              <Route path="/category" exact element={<CategoryPage contentDisplay={contentDisplay} />} />
+              <Route path="*" exact element={<PageNotFound contentDisplay={contentDisplay} />} />
           </Routes>
       </Router>
       <Footer />

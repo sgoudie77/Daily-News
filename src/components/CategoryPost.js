@@ -10,7 +10,7 @@ function CategoryPost() {
             </div>
             <div className="category-content">
                 <div className="category-image">
-                    <img src={categoryImage} />
+                    <img src={categoryImage} alt="News Story" />
                 </div>
                 <div className="category-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod ex vitae tellus faucibus venenatis. Nulla bibendum scelerisque urna <Link to="/category"><span>Read More...</span></Link></p>

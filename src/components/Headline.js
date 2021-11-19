@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import headlineImg from '../img/bn-placeholder.jpg';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ function Headline() {
     return ( 
         <div className="headline">
             <div className="headline-img">
-                <img src={headlineImg} />
+                <img src={headlineImg} alt="Headline News" />
             </div>
             <div className="headline-title">
                 <h1>Top News Story Title</h1>
@@ -19,4 +19,4 @@ function Headline() {
     )
 }
 
-export default Headline
+export default Headline;

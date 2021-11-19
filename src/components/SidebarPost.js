@@ -6,7 +6,7 @@ function SidebarPost() {
     return (
         <div className="sidebar-post">
             <div className="sidebar-image">
-                <img src={sidebarImage} />
+                <img src={sidebarImage} alt="Top News" />
             </div>
             <div className="sidebar-title">
                 <h3>Top News Title</h3>

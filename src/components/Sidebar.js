@@ -5,7 +5,8 @@ function Sidebar() {
      
     return (
         <div className="sidebar">
-            <SidebarPost />  
+            {/* {headlinesList && <SidebarPost headlines={headlinesList.articles[1]} />}   */}
+            <SidebarPost  />  
             <SidebarPost />  
             <SidebarPost />  
         </div>

@@ -23,10 +23,10 @@ function Main() {
         <div>  
             <div className="main">
                 {headlinesList && <Headline headlines={headlinesList.articles[0]} />}
-                {headlinesList && <Sidebar headlines={headlinesList.articles[1]} />}
+                {headlinesList && <Sidebar headlines={headlinesList.articles[1], headlinesList.articles[2], headlinesList.articles[3]} />}
             </div>
-            <div className="categories">
-                <Categories />
+            <div className="categories-main">
+                {headlinesList && <Categories headlines={headlinesList.articles[4], headlinesList.articles[5], headlinesList.articles[6], headlinesList.articles[7], headlinesList.articles[8], headlinesList.articles[9]} />}
             </div>
         </div>
     )

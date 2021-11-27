@@ -9,19 +9,6 @@ import PageNotFound from './components/PageNotFound';
 import './css/main.css';
 
 function App() {
-  
-  // const [contentDisplay, setContentDisplay] = useState(null);
-
-  // useEffect(() => {
-  //   fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=REACT_APP_API_KEY')
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then(data => {
-  //       console.log(data);
-  //       setContentDisplay(data);
-  //     })
-  // },[])
 
   return (
     <div className="App">

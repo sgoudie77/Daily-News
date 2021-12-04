@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import Sidebar from '../components/Sidebar';
-import Categories from '../components/Categories';
+import React, { useState, useEffect } from 'react';
+import Sidebar from '../sidebar/Sidebar';
+import Categories from './Categories';
 import Headline from './Headline';
 
 function Main() {
@@ -20,10 +20,10 @@ function Main() {
     },[])
     
     return (
-        <div>  
+        <div>
             <div className="main">
                 {headlinesList && <Headline headlines={headlinesList.articles[0]} />}
-                {headlinesList && <Sidebar headlines={headlinesList.articles[1], headlinesList.articles[2], headlinesList.articles[3]} />}
+                {headlinesList && <Sidebar sidebarNews={headlinesList.articles.slice(1, 4)} />}
             </div>
             <div className="categories-main">
                 {headlinesList && <Categories headlines={headlinesList.articles[4], headlinesList.articles[5], headlinesList.articles[6], headlinesList.articles[7], headlinesList.articles[8], headlinesList.articles[9]} />}
@@ -32,4 +32,4 @@ function Main() {
     )
 }
 
-export default Main
+export default Main;

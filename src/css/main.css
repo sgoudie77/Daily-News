@@ -116,6 +116,10 @@ body {
     margin-top: 4rem;
 }
 
+.sidebar ul li {
+    list-style: none;
+}
+
 .sidebar-post {
     position: relative;
     display: flex;

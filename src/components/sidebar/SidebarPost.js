@@ -7,14 +7,14 @@ function SidebarPost(props) {
         <div className="sidebar-post">
             <div className="sidebar-image">
                 {/* <img src={sidebarImage} alt="Top News" /> */}
-                <img src={props.headlines.urlToImage} alt="Top News" />
+                <img src={props.sidebarPost.urlToImage} alt="Top News" />
             </div>
             <div className="sidebar-title">
-                <h3>{props.headlines.title}</h3>
+                <h3>{props.sidebarPost.title}</h3>
                 {/* <h3>News Title</h3> */}
             </div>
             <div className="sidebar-text">
-                <p>{props.headlines.description} <Link to="/article"><span>Read More...</span></Link></p>
+                <p>{props.sidebarPost.description} <Link to="/article"><span>Read More...</span></Link></p>
             </div>
         </div>
     )

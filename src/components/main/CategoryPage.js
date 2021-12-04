@@ -1,5 +1,5 @@
 import React, {  useState, useEffect } from 'react'
-import BtnHome from './BtnHome'
+import BtnHome from '../buttons/BtnHome'
 // import categoryImage from '../img/news-placeholder.png'
 import { Link } from 'react-router-dom';
 import CategoryPost from './CategoryPost';

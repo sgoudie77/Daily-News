@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import BtnHome from './BtnHome'
-import BtnCategories from './BtnCategories'
+import BtnHome from '../buttons/BtnHome'
+import BtnCategories from '../buttons/BtnCategories'
 import { Link } from 'react-router-dom';
 // import headlineImg from '../img/bn-placeholder.jpg';
 import ArticlePost from './ArticlePost';

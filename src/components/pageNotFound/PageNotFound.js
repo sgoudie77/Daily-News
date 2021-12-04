@@ -1,5 +1,5 @@
 import React from 'react'
-import BtnHome from './BtnHome'
+import BtnHome from '../buttons/BtnHome'
 
 function PageNotFound() {
     return (

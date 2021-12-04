@@ -7,7 +7,7 @@ import ArticlePost from './ArticlePost';
 
 function Article() {
     
-    const [headlinesList, setHeadlinesList] = useState(null);
+    const [articleMain, setArticleMain] = useState(null);
     const API_KEY = process.env.REACT_APP_API_KEY;
     
     useEffect(() => {
@@ -17,14 +17,14 @@ function Article() {
         })
         .then(data => {
             console.log(data);
-            setHeadlinesList(data);
+            setArticleMain(data);
         })
     },[])
     
     return (
         <div>
             <div className="article">
-                {headlinesList && <ArticlePost headlines={headlinesList.articles[0]} />}
+                {articleMain && <ArticlePost articleDisplay={articleMain.articles[0]} />}
                 {/* <div className="article-image">
                     <img src={props.headlines.urlToImage} alt="Headline News" />
                 </div>

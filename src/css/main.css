@@ -85,7 +85,7 @@ body {
     margin-top: 3rem;
 }
 .headline-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .headline-img {
     position: relative;
@@ -146,6 +146,11 @@ body {
 
 /* Categories Styles Start Here */
 .categories-main {
+    width: 100%;
+    max-width: 100vw;
+}
+
+.categories-area {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -155,11 +160,27 @@ body {
     margin-bottom: 2rem;
 }
 
+.categories-area ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* width: 100%; */
+}
+
+.categories-area ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
 .category-post {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
     height: auto;
     text-align: left;
     padding: 1rem;
@@ -177,6 +198,8 @@ body {
 }
 .category-image img {
     width: 150px;
+    padding-top: 1rem;
+    margin-right: 1rem;
 }
 .category-text {
     text-align: left;
@@ -187,8 +210,6 @@ body {
     color: red;
     text-decoration: underline;
 }
-
-
 /* Categories Styles End Here */
 
 /* Categories Page Styles Start Here */
@@ -212,6 +233,46 @@ body {
     justify-content: center;
     margin-bottom: 1rem;
 }
+
+.category-page-post {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: auto;
+    text-align: left;
+    padding: 1rem;
+}
+.category-page-title h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+.category-page-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1rem; */
+}
+.category-page-image {
+    position: relative;
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-right: 1rem;
+}
+.category-page-image img {
+    width: 150px;
+}
+.category-page-text {
+    text-align: left;
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+.category-page-text p span {
+    color: red;
+    text-decoration: underline;
+}
 /* Categories Page Styles End Here */
 
 /* Article Page Styles Start Here */
@@ -224,7 +285,6 @@ body {
     /* width: 100%; */
     max-width: 100vw;
     height: auto;
-    
 }
 
 .article-image{

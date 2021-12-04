@@ -26,7 +26,7 @@ function Main() {
                 {headlinesList && <Sidebar sidebarNews={headlinesList.articles.slice(1, 4)} />}
             </div>
             <div className="categories-main">
-                {headlinesList && <Categories headlines={headlinesList.articles[4], headlinesList.articles[5], headlinesList.articles[6], headlinesList.articles[7], headlinesList.articles[8], headlinesList.articles[9]} />}
+                {headlinesList && <Categories categoryList={headlinesList.articles.slice(4, 10)} />}
             </div>
         </div>
     )

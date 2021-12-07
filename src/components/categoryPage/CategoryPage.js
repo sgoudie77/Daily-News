@@ -1,9 +1,10 @@
-import React, {  useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import BtnHome from '../buttons/BtnHome'
 // import categoryImage from '../img/news-placeholder.png'
 import { Link } from 'react-router-dom';
-import CategoryPost from '../main/CategoryPost';
+// import CategoryPost from '../main/CategoryPost';
 import CategoryPagePost from './CategoryPagePost'
+import CategoryPageItems from './CategoryPageItems';
 
 function CategoryPage() {
     
@@ -26,12 +27,14 @@ function CategoryPage() {
             {/* <CategoryPagePost /> */}
             <div className="category-page">
                 <h2>Category Title</h2>
-                {headlinesList && <CategoryPagePost headlines={headlinesList.articles[4]} />}
-                {headlinesList && <CategoryPagePost headlines={headlinesList.articles[5]} />}
-                {headlinesList && <CategoryPagePost headlines={headlinesList.articles[6]} />}
-                {headlinesList && <CategoryPagePost headlines={headlinesList.articles[7]} />}
-                {headlinesList && <CategoryPagePost headlines={headlinesList.articles[8]} />}
-                {headlinesList && <CategoryPagePost headlines={headlinesList.articles[9]} />}
+                
+                {headlinesList && <CategoryPageItems categoryPagePost={headlinesList.articles.slice(4, 10)} />}
+                {/* {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[4]} />}
+                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[5]} />}
+                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[6]} />}
+                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[7]} />}
+                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[8]} />}
+                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[9]} />} */}
             </div>
             <div className="category-page-btn">
                 <Link to="/"><BtnHome /></Link>

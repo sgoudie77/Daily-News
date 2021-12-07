@@ -6,14 +6,14 @@ function CategoryPagePost(props) {
         <div className="category-page-post">
             <div className="category-page-image">
                 {/* <img src={categoryImage} alt="News Story" /> */}
-                <img src={props.headlines.urlToImage} alt="News Story" />
+                <img src={props.categoryItems.urlToImage} alt="News Story" />
             </div>
             <div className="category-page-content">
                 <div className="category-page-title">
-                    <h3>{props.headlines.title}</h3>
+                    <h3>{props.categoryItems.title}</h3>
                 </div>
                 <div className="category-page-text">
-                    <p>{props.headlines.description} <Link to="/category"><span>Read More...</span></Link></p>
+                    <p>{props.categoryItems.description} <Link to="/category"><span>Read More...</span></Link></p>
                 </div>
             </div>
         </div>

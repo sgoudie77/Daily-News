@@ -62,6 +62,10 @@ body {
     margin-right: 2.5rem;
     font-size: 2rem;
     display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 /* Navbar Styles End Here */
 
@@ -192,6 +196,12 @@ body {
     text-transform: uppercase;
     border-bottom: 1px solid #000;
 }
+
+.category-item-title h3 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+
 .category-content {
     position: relative;
     display: flex;
@@ -346,6 +356,8 @@ body {
     font-size:  2rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 /* Footer Styles End Here */
 

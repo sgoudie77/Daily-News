@@ -341,8 +341,8 @@ body {
 
 /* Footer Styles Start Here */
 .footer-links {
-    
-    border-top: 1px solid #000;
+    /* border-top: 1px solid #000; */
+    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
 }
 .footer-links ul {
     position: relative;
@@ -358,6 +358,7 @@ body {
     margin-right: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #fff;
 }
 /* Footer Styles End Here */
 

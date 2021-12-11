@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Navbar from './components/header/Navbar';
 import Main from './components/main/Main';
 import Article from './components/article/Article';
 import CategoryPage from './components/categoryPage/CategoryPage';
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <Router>
           <Routes>
               <Route path="/" exact element={<Main />} />

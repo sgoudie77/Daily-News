@@ -1,13 +1,13 @@
 import React from 'react'
-import logo from '../img/GNS-logo.png'
+// import logo from '../img/GNS-logo.png'
 // import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <div className="navbar">
-            <div className="logo">
+            {/* <div className="logo">
                 <img src={logo} alt="logo" />
-            </div>
+            </div> */}
             <div className="nav-links">
                 <ul>
                     <li>General</li>

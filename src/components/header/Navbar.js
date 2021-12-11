@@ -3,6 +3,7 @@ import { MenuItems } from './MenuItems'
 import './Navbar.css'
 // import logo from './GNS-logo.png';
 
+
 class Navbar extends Component {
     state = { clicked: false }
 

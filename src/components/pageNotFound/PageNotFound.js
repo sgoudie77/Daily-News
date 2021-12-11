@@ -3,9 +3,13 @@ import BtnHome from '../buttons/BtnHome'
 
 function PageNotFound() {
     return (
-        <div>
-            <h1>Page not found</h1>
-            <BtnHome />
+        <div className="page-not-found">
+            <div>
+                <h1>Page not found</h1>
+            </div>
+            <div>
+                <BtnHome />
+            </div>
         </div>
     )
 }

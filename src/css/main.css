@@ -362,5 +362,21 @@ body {
 }
 /* Footer Styles End Here */
 
+/* Page Not Found Styles Start Here */
+.page-not-found {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 78.75vh;
+    width: 100%;
+}
+.page-not-found h1 {
+    margin-bottom: 2rem;
+}
+/* Page Not Found Styles End Here */
+
 /* Responsive Styles Start Here */
 /* Responsive Styles End Here */

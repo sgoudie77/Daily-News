@@ -352,6 +352,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
+    /* text-decoration: none; */
 }
 .footer-links ul li {
     font-size:  2rem;
@@ -360,8 +361,69 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #fff;
+    text-decoration: none;
+    list-style: none;
 }
 /* Footer Styles End Here */
+
+/* About Page Styles Start Here */
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 78.75vh;
+    justify-content: center;
+    align-items: center;
+}
+.about-info h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.about-info p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+.about-btn {
+    margin: 2rem 0;
+}
+/* About Page Styles End Here */
+
+/* Contact Page Styles Start Here */
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 78.75vh;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.contact-info p {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+.contact-btn {
+    margin: 2rem 0;
+}
+/* Contact Page Styles End Here */
 
 /* Page Not Found Styles Start Here */
 .page-not-found {

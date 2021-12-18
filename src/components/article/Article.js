@@ -10,8 +10,21 @@ function Article() {
     const [articleMain, setArticleMain] = useState(null);
     const API_KEY = process.env.REACT_APP_API_KEY;
     
+    // const category = [
+    //     'general', 
+    //     'business', 
+    //     'science', 
+    //     'health', 
+    //     'sports', 
+    //     'tech'
+    // ]
+
+    const category = 'business'
+
+    const [articleUrl, setarticleUrl] = useState(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`)
+
     useEffect(() => {
-        fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=' + API_KEY)
+        fetch(articleUrl)
         .then((response) => {
             return response.json();
         })
@@ -19,22 +32,12 @@ function Article() {
             console.log(data);
             setArticleMain(data);
         })
-    },[])
+    },[articleUrl])
     
     return (
         <div>
             <div className="article">
                 {articleMain && <ArticlePost articleDisplay={articleMain.articles[0]} />}
-                {/* <div className="article-image">
-                    <img src={props.headlines.urlToImage} alt="Headline News" />
-                </div>
-                <div className="article-title">
-                    <h2>{props.headlines.title}</h2>
-                </div>
-                <div className="article-text">
-                <p>{props.headlines.content}</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod ex vitae tellus faucibus venenatis. Etiam euismod ex vitae tellus faucibus venenatis. Etiam euismod ex vitae tellus faucibus venenatis. Nulla bibendum scelerisque urna vel commodo. Nam ut tortor quam. Sed ultricies nisl ut tortor consequat, quis placerat sem pretium. Maecenas imperdiet massa in lobortis scelerisque. Ut fringilla, quam eget euismod porta, turpis sem dictum justo, in porta lectus metus non est. Vestibulum vestibulum rutrum metus in consectetur.</p>
-                </div> */}
             </div>
             <div className="article-btns">
                 <Link to="/"><BtnHome /></Link>

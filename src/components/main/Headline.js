@@ -1,12 +1,10 @@
 import React from 'react';
-// import headlineImg from '../img/bn-placeholder.jpg';
 import { Link } from 'react-router-dom';
 
 function Headline(props) {
     return ( 
         <div className="headline">
             <div className="headline-img">
-                {/* <img src={headlineImg} alt="Headline News" /> */}
                 <img src={props.headlines.urlToImage} alt="Headline News" />
             </div>
             <div className="headline-title">

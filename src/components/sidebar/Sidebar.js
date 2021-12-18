@@ -11,9 +11,6 @@ function Sidebar(props) {
                     })
                 }
             </ul>
-            {/* <SidebarPost sidebarPost={props.sidebarNews[0]} />
-            <SidebarPost sidebarPost={props.sidebarNews[1]} />
-            <SidebarPost sidebarPost={props.sidebarNews[2]} />   */}
         </div>
     )
 }

@@ -1,12 +1,10 @@
 import React from 'react'
-// import { Link } from 'react-router-dom';
 
 function ArticlePost(props) {
     
     return (
         <div className="article">
             <div className="article-image">
-                    {/* <img src={headlineImg} alt="Headline News" /> */}
                 <img src={props.articleDisplay.urlToImage} alt="Headline News" />
             </div>
             <div className="article-title">

@@ -11,12 +11,6 @@ function Categories(props) {
                 })
             }
             </ul>
-            {/* {headlinesList && <CategoryPost headlines={headlinesList.articles[4]} />}
-            {headlinesList && <CategoryPost headlines={headlinesList.articles[5]} />}
-            {headlinesList && <CategoryPost headlines={headlinesList.articles[6]} />}
-            {headlinesList && <CategoryPost headlines={headlinesList.articles[7]} />}
-            {headlinesList && <CategoryPost headlines={headlinesList.articles[8]} />}
-            {headlinesList && <CategoryPost headlines={headlinesList.articles[9]} />} */}
         </div>
     )
 }

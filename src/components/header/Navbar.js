@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { MenuItems } from './MenuItems'
 import './Navbar.css'
-// import logo from './GNS-logo.png';
+import logo from '../../img/GNS-logo.png'
+import { Link, NavLink } from 'react-router-dom';
 
 
 class Navbar extends Component {
@@ -14,10 +15,11 @@ class Navbar extends Component {
     render(){
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo"><i className="fab fa-react"></i></h1>
-                {/* <div className="logo">
-                    <img src={logo} alt="logo" />
-                </div> */}
+                <div className="logo">
+                    <Link to='/'>
+                        <img src={logo} alt="logo" />
+                    </Link>
+                </div>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>

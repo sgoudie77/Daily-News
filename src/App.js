@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import Navbar from './components/header/Navbar';
 import Main from './components/main/Main';
 import Article from './components/article/Article';
@@ -13,17 +12,16 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
-      <Navbar />
       <Router>
+      <Navbar />
           <Routes>
               <Route path="/" exact element={<Main />} />
               <Route path="/article" exact element={<Article />} />
               <Route path="/category" exact element={<CategoryPage />} />
               <Route path="*" exact element={<PageNotFound />} />
           </Routes>
-      </Router>
       <Footer />
+      </Router>
     </div>
   );
 }

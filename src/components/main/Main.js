@@ -8,8 +8,12 @@ function Main() {
     const [headlinesList, setHeadlinesList] = useState(null);
     const API_KEY = process.env.REACT_APP_API_KEY;
     
+    const category = 'business'
+
+    const [articleUrl, setarticleUrl] = useState(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`)
+
     useEffect(() => {
-        fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=' + API_KEY)
+        fetch(articleUrl)
         .then((response) => {
             return response.json();
         })
@@ -17,7 +21,7 @@ function Main() {
             console.log(data);
             setHeadlinesList(data);
         })
-    },[])
+    },[articleUrl])
     
     return (
         <div>

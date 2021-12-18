@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import BtnHome from '../buttons/BtnHome'
-// import categoryImage from '../img/news-placeholder.png'
 import { Link } from 'react-router-dom';
-// import CategoryPost from '../main/CategoryPost';
-import CategoryPagePost from './CategoryPagePost'
 import CategoryPageItems from './CategoryPageItems';
 
 function CategoryPage() {
@@ -11,8 +8,13 @@ function CategoryPage() {
     const [headlinesList, setHeadlinesList] = useState(null);
     const API_KEY = process.env.REACT_APP_API_KEY;
     
+    const category = 'business'
+
+    const [articleUrl, setarticleUrl] = useState(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`)
+
+
     useEffect(() => {
-        fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=' + API_KEY)
+        fetch(articleUrl)
         .then((response) => {
             return response.json();
         })
@@ -20,21 +22,13 @@ function CategoryPage() {
             console.log(data);
             setHeadlinesList(data);
         })
-    },[])
+    },[articleUrl])
 
     return (
         <div>
-            {/* <CategoryPagePost /> */}
             <div className="category-page">
                 <h2>Category Title</h2>
-                
                 {headlinesList && <CategoryPageItems categoryPagePost={headlinesList.articles.slice(4, 10)} />}
-                {/* {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[4]} />}
-                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[5]} />}
-                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[6]} />}
-                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[7]} />}
-                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[8]} />}
-                {headlinesList && <CategoryPagePost categoryPagePost={headlinesList.articles[9]} />} */}
             </div>
             <div className="category-page-btn">
                 <Link to="/"><BtnHome /></Link>

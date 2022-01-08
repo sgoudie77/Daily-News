@@ -10,7 +10,7 @@ function Main() {
     
     const category = 'business'
 
-    const [articleUrl, setarticleUrl] = useState(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`)
+    const [articleUrl, setarticleUrl] = useState(`https://newsapi.org/v2/top-headlines?country=us&category=sports&pageSize=20&apiKey=${API_KEY}`)
 
     useEffect(() => {
         fetch(articleUrl)

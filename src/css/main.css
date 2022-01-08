@@ -352,7 +352,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    /* text-decoration: none; */
 }
 .footer-links ul li {
     font-size:  2rem;
@@ -362,7 +361,6 @@ body {
     letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
-    list-style: none;
 }
 /* Footer Styles End Here */
 

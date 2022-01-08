@@ -1,11 +1,47 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
 function CategoryPost(props) {
+    
+    // const categories = [
+    //     {
+    //         categoryTitle: 'General',
+    //         url: '#'
+    //     },
+    //     {
+    //         categoryTitle: 'Business',
+    //         url: '#'
+    //     },
+    //     {
+    //         categoryTitle: 'Science',
+    //         url: '#'
+    //     },
+    //     {
+    //         categoryTitle: 'Health',
+    //         url: '#'
+    //     },
+    //     {
+    //         categoryTitle: 'Sports',
+    //         url: '#'
+    //     },
+    //     {
+    //         categoryTitle: 'Tech',
+    //         url: '#'
+    //     }
+    // ]
+    
     return (
         <div className="category-post">
             <div className="category-title">
                 <h3>Category Title</h3>
+                {/* {MenuItems.map((item, index) => {
+                    return (
+                        <h3 key={index}>
+                            {item.link}
+                        </h3>
+                    )
+                })} */}
             </div>
             <div className="category-content">
                 <div className="category-image">

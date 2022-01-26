@@ -1,3 +1,5 @@
+// Navbar Items and Links
+
 export const MenuItems = [
     {
         link: 'General',

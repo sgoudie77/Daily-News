@@ -1,26 +1,28 @@
-export const MenuItems = [
+// Category Names and Links
+
+export const CategoryItems = [
     {
-        link: 'General',
+        categoryTitle: 'General',
         url: '#',
         cName: 'nav-links'
     },
     {
-        link: 'Business',
+        categoryTitle: 'Business',
         url: '#',
         cName: 'nav-links'
     },
     {
-        link: 'Science',
+        categoryTitle: 'Science',
         url: '#',
         cName: 'nav-links'
     },
     {
-        link: 'Health',
+        categoryTitle: 'Health',
         url: '#',
         cName: 'nav-links'
     },
     {
-        link: 'Sports',
+        categoryTitle: 'Sports',
         url: '#',
         cName: 'nav-links'
     },

@@ -9,15 +9,6 @@ function Article() {
     
     const [articleMain, setArticleMain] = useState(null);
     const API_KEY = process.env.REACT_APP_API_KEY;
-    
-    // const category = [
-    //     'general', 
-    //     'business', 
-    //     'science', 
-    //     'health', 
-    //     'sports', 
-    //     'tech'
-    // ]
 
     const category = 'business'
 
